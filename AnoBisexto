@@ -1,0 +1,12 @@
+import sys
+
+Ano = float(input ('Digite um ano maior que 2000: '))
+if(Ano < 1000 or Ano > 9999): 
+  sys.exit(print('O numero digitado não atende aos requesitos'))
+else:
+  Ano1 = float(Ano % 1000)
+  Ano2 = float(Ano1 % 100)
+  if(Ano2 % 4 == 0):
+    print('O ano {:.0f}, é bisexto!'.format(Ano))
+  else:
+    print('O ano {:.0f}, não é bisexto!'.format(Ano))
